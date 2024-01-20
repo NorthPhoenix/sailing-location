@@ -6,6 +6,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 
 import { TRPCReactProvider } from "~/trpc/react";
+import RootClientLayout from "./_clientLayout";
 
 export const metadata: Metadata = {
   title: "Sailing Finder",
@@ -22,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+        <TRPCReactProvider>
+          <RootClientLayout>{children}</RootClientLayout>
+        </TRPCReactProvider>
       </body>
     </html>
   );
