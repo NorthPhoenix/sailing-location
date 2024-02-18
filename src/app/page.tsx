@@ -118,21 +118,21 @@ const ZipcodeForm: React.FC = () => {
 // locations with random different positions in US
 const locations = [
   {
-    name: "Deez Nuts",
+    name: "Location 1",
     position: {
       lat: 39.8283,
       lng: -98.5795,
     },
   },
   {
-    name: "Your Mom",
+    name: "Location 2",
     position: {
       lat: 40.7128,
       lng: -74.006,
     },
   },
   {
-    name: "Blyt City",
+    name: "Location 3",
     position: {
       lat: 37.7749,
       lng: -122.4194,
